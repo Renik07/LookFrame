@@ -3,5 +3,6 @@ export type Device = {
   name: string;
   width: number;
   height: number;
-	type: "mobile" | "tablet" | "desktop";
+  type: "mobile" | "tablet" | "desktop";
+  platform: "iOS" | "Android" | "Windows" | "Mac";
 };

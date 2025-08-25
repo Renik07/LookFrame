@@ -14,7 +14,7 @@ export default function ToolbarDevices() {
 
 	return (
 		<div>
-			<h3 className="mb-1 text-black">{t('devices')}</h3>
+			<h3 className="mb-1">{t('devices')}</h3>
 			<div className="flex justify-around items-center border-1 rounded-sm p-1">
 				<button className={`cursor-pointer p-2 rounded ${category === "mobile" ? "bg-gray-200" : ""}`} onClick={() => setCategory("mobile")}>
 					<Image src={iconMob} alt="" width={20} height={32} />
