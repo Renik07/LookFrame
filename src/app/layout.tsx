@@ -1,9 +1,9 @@
-// layout.tsx
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
+import LocaleProvider from "@/components/LocaleProvider";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -22,20 +22,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode;
-}>) {
+}) {
 	return (
 		<html lang="en" className="h-full" suppressHydrationWarning>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				><NextIntlClientProvider>{children}</NextIntlClientProvider>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}>
+				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+					<LocaleProvider>
+						{children}
+					</LocaleProvider>
 				</ThemeProvider>
 			</body>
 		</html>
