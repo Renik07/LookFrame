@@ -7,6 +7,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import LanguageToggle from "./LanguageToggle"
+import MainDevices from "./MainDevices"
 
 export default function Main() {
 	const { theme, setTheme } = useTheme()
@@ -38,16 +39,7 @@ export default function Main() {
 					)}
 				</Button>
 			</div>
-			{/* devices */}
-			<div className='flex flex-wrap gap-4'>
-				{/* <iframe
-					src="http://localhost:3000/"
-					title="Example Iframe"
-					className="w-[320px] h-[568px]"
-					style={{ border: 'none' }}
-				></iframe> */}
-
-			</div>
+			<MainDevices />
 		</div>
 	)
 }
