@@ -4,8 +4,8 @@ import Main from "../components/Main";
 
 export default function Home() {
 	return (
-		<div className="height-100%">
-			<main className="flex">
+		<div className="h-screen">
+			<main className="flex min-h-full">
 				<Sidebar />
 				<Main />
 			</main>

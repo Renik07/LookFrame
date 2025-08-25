@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import iconDesk from '@/images/i-desktop.png';
@@ -8,7 +10,7 @@ export default function ToolbarDevices() {
 	const t = useTranslations('ToolbarDevices');
 	return (
 		<div>
-			<h3 className="mb-1">{t('devices')}</h3>
+			<h3 className="mb-1 text-black">{t('devices')}</h3>
 			<div className="flex justify-around items-center border-1 rounded-sm p-1">
 				<button className="cursor-pointer">
 					<Image src={iconMob} alt="" width={20} height={32} />
