@@ -1,77 +1,17 @@
 // data/devices.ts
 import { Device } from "@/lib/types";
+import { iphone } from "./devices/iphone";
+import { ipad } from "./devices/ipad";
+import { macOS } from "./devices/macDesktop";
+import { windowsDesktop } from "./devices/windowsDesktop";
+import { tabletsAndroid } from "./devices/androidTablet";
+import { androidMobile } from "./devices/androidMobile";
 
 export const devices: Device[] = [
-  {
-    id: "iphone-14",
-    name: "iPhone 14",
-    width: 390,
-    height: 844,
-    type: "mobile",
-    platform: "iOS",
-  },
-  {
-    id: "iphone-14-pro",
-    name: "iPhone 14 Pro",
-    width: 430,
-    height: 932,
-    type: "mobile",
-    platform: "iOS",
-  },
-  {
-    id: "pixel-7",
-    name: "Google Pixel 7",
-    width: 412,
-    height: 915,
-    type: "mobile",
-    platform: "Android",
-  },
-  {
-    id: "galaxy-s22",
-    name: "Samsung Galaxy S22",
-    width: 412,
-    height: 915,
-    type: "mobile",
-    platform: "Android",
-  },
-  {
-    id: "ipad-pro",
-    name: "iPad Pro 11\"",
-    width: 834,
-    height: 1194,
-    type: "tablet",
-    platform: "iOS",
-  },
-  {
-    id: "surface-pro",
-    name: "Surface Pro 9",
-    width: 912,
-    height: 1368,
-    type: "tablet",
-    platform: "Windows",
-  },
-  {
-    id: "surface-pro",
-    name: "Surface Pro 9",
-    width: 912,
-    height: 1368,
-    type: "tablet",
-    platform: "Android",
-  },
-  {
-    id: "macbook-pro",
-    name: "MacBook Pro 14\"",
-    width: 1512,
-    height: 982,
-    type: "desktop",
-    platform: "Mac",
-  },
-  {
-    id: "windows-laptop",
-    name: "Windows Laptop",
-    width: 1366,
-    height: 768,
-    type: "desktop",
-    platform: "Windows",
-  },
+	...iphone,
+	...ipad,
+	...macOS,
+	...windowsDesktop,
+	...tabletsAndroid,
+	...androidMobile
 ];
