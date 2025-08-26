@@ -4,5 +4,5 @@ export type Device = {
   width: number;
   height: number;
   type: "mobile" | "tablet" | "desktop";
-  platform: "iOS" | "Android" | "Windows" | "Mac";
+  platform: "iOS" | "Android" | "Windows" | "macOS" | "iPadOS";
 };
