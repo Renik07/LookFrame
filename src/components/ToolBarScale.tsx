@@ -7,8 +7,8 @@ export default function ToolBarScale() {
 	const { scale, setScale } = useDevices();
 
 	return (
-		<div>
-			<h3 className="mb-1 text-black">Масштаб</h3>
+		<div className="mb-2">
+			<h3 className="mb-1 text-black">Zoom</h3>
 			<div className="flex items-center justify-between space-x-4">
 				<Slider
 					value={[scale * 100]}
@@ -18,7 +18,7 @@ export default function ToolBarScale() {
 					onValueChange={(val) => setScale(val[0] / 100)}
 					className="w-50"
 				/>
-				<span className="text-sm text-gray-700 w-10">
+				<span className="text-sm text-gray-700 w-10 text-right">
 					{Math.round(scale * 100)}%
 				</span>
 			</div>

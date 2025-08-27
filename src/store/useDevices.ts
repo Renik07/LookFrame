@@ -1,26 +1,28 @@
 // src/store/useDevices.ts
-// src/store/useDevices.ts
 import { create } from "zustand";
 import { Device } from "@/lib/types";
 
 type Category = "mobile" | "tablet" | "desktop";
+type Orientation = "portrait" | "landscape";
 
 type DevicesState = {
   selected: Device[];
   category: Category;
   scale: number;
+	orientation: Orientation;
   setCategory: (c: Category) => void;
   toggleDevice: (d: Device) => void;
   setSelected: (devices: Device[]) => void;
   setScale: (s: number) => void;
+	toggleOrientation: () => void;
 };
 
 export const useDevices = create<DevicesState>((set) => ({
   selected: [],
   category: "mobile",
   scale: 0.5, // по умолчанию 50%
-
-  // 👇 теперь при смене категории сбрасываем selected
+	orientation: "portrait",
+  // теперь при смене категории сбрасываем selected
   setCategory: (c) => set(() => ({
     category: c,
     selected: [],
@@ -35,7 +37,10 @@ export const useDevices = create<DevicesState>((set) => ({
           : [...state.selected, device],
       };
     }),
-
   setSelected: (devices) => set({ selected: devices }),
   setScale: (s) => set({ scale: s }),
+	toggleOrientation: () =>
+    set((state) => ({
+      orientation: state.orientation === "portrait" ? "landscape" : "portrait",
+    })),
 }));

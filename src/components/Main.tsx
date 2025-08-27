@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Separator } from "@/components/ui/separator"
 
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
@@ -39,6 +40,7 @@ export default function Main() {
 					)}
 				</Button>
 			</div>
+			<Separator className="mb-4" />
 			<MainDevices />
 		</div>
 	)
