@@ -4,6 +4,7 @@ import { Device } from "@/lib/types";
 
 type Category = "mobile" | "tablet" | "desktop";
 type Orientation = "portrait" | "landscape";
+type IOSChromeMode = "off" | "fixed" | "float";
 
 type DevicesState = {
   selected: Device[];

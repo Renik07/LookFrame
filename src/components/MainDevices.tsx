@@ -1,6 +1,7 @@
 // src/components/MainDevices.tsx
 
 import { useDevices } from "@/store/useDevices";
+import IosFrame from "./IosFrame";
 
 export default function MainDevices() {
 	const { selected, scale, orientation } = useDevices();
@@ -16,8 +17,8 @@ export default function MainDevices() {
 
 				return (
 					<div
+						className="mb-8"
 						key={d.id}
-						className="border shadow overflow-hidden relative"
 						style={{
 							width: scaledWidth,
 							height: scaledHeight,
@@ -27,21 +28,13 @@ export default function MainDevices() {
 							{d.name} ({baseWidth}x{baseHeight})
 						</div>
 						<div
+							className="border shadow overflow-hidden relative"
 							style={{
-								width: baseWidth,
-								height: baseHeight,
-								transform: `scale(${scale})`,
-								transformOrigin: "top left",
+								// width: scaledWidth,
+								height: "100%",
 							}}
 						>
-							<iframe
-								src="http://localhost:3000/"
-								style={{
-									width: baseWidth,
-									height: baseHeight,
-									border: "0",
-								}}
-							/>
+							<IosFrame baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />
 						</div>
 					</div>
 				);

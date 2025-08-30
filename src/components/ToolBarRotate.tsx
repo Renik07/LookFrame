@@ -8,7 +8,7 @@ export default function ToolBarRotate() {
 	const { orientation, toggleOrientation } = useDevices();
 
 	return (
-		<div className="flex items-center justify-between mb-2">
+		<div className="flex items-center justify-between mb-3">
 			<Label htmlFor="rotate">Rotate</Label>
 			<Switch
 				id="rotate"
