@@ -7,7 +7,7 @@ export default function ToolBarScale() {
 	const { scale, setScale } = useDevices();
 
 	return (
-		<div className="mb-2">
+		<div className="mb-3">
 			<h3 className="mb-1 text-black">Zoom</h3>
 			<div className="flex items-center justify-between space-x-4">
 				<Slider
