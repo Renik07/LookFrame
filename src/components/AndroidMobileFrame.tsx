@@ -4,6 +4,12 @@ import { Device } from "@/lib/types";
 import { currentTime } from "@/lib/utils";
 import { useDevices } from "@/store/useDevices";
 import { useState } from "react";
+import iconDots from "@/images/chrome-mobile/i-dots.png";
+import iconHome from "@/images/chrome-mobile/i-home.png";
+import iconLock from "@/images/chrome-mobile/i-lock.png";
+import iconMic from "@/images/chrome-mobile/i-mic.png";
+import iconTab from "@/images/chrome-mobile/i-tab.png";
+import Image from "next/image";
 
 type AndroidMobileFrameProps = {
 	device: Device;
@@ -64,10 +70,19 @@ export default function AndroidMobileFrame({ device, baseWidth, baseHeight, scal
 					{/* браузерная верхняя панель */}
 					{(panelMode === "fixed" || (panelMode === "float" && !isHovered)) && (
 						<div
-							className="bg-red-300 transition-all duration-300"
+							className="bg-white transition-all duration-300"
 							style={{ height: topHeight }}
 						>
-							Browser panel
+							<div className="flex items-center justify-between h-[100%] px-3 gap-1">
+								<Image src={iconHome} alt="" width={24} height={25} />
+								<div className="bg-[#FAEFF1] p-2.5 pl-4 pr-4 rounded-4xl flex items-center gap-3">
+									<Image src={iconLock} alt="" width={16} height={21} />
+									<span className="truncate max-w-36">leon-fumi.netlify.apdasdadasdp</span>
+								</div>
+								<Image src={iconMic} alt="" width={15} height={27} />
+								<Image src={iconTab} alt="" width={23} height={23} />
+								<Image src={iconDots} alt="" width={8} height={23} />
+							</div>
 						</div>
 					)}
 				</div>
