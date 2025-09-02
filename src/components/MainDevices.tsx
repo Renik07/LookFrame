@@ -34,8 +34,8 @@ export default function MainDevices() {
 								height: "100%",
 							}}
 						>
-							<AndroidMobileFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />
-							{/* <IosFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} /> */}
+							{d.platform === "iOS" && <IosFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "Android" && <AndroidMobileFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 						</div>
 					</div>
 				);
