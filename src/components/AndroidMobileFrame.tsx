@@ -96,7 +96,6 @@ export default function AndroidMobileFrame({ device, baseWidth, baseHeight, scal
 					width: "100%",
 					height: "100%",
 					paddingTop: topPadding,
-					// paddingTop: statusBarHeight,
 					paddingBottom: 0,
 					border: "0",
 				}}
