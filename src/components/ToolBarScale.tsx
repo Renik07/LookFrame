@@ -16,7 +16,7 @@ export default function ToolBarScale() {
 					max={100}
 					step={5}
 					onValueChange={(val) => setScale(val[0] / 100)}
-					className="w-50"
+					className="w-full"
 				/>
 				<span className="text-sm text-gray-700 w-10 text-right">
 					{Math.round(scale * 100)}%
