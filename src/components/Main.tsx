@@ -19,7 +19,7 @@ export default function Main() {
 	if (!mounted) return null
 
 	return (
-		<div className='text-black flex-5/6 p-2'>
+		<div className='text-black grow p-2'>
 			<div className='flex items-center mb-4'>
 				<div>
 				</div>

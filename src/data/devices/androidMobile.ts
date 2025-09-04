@@ -3,11 +3,8 @@ import { Device } from "@/lib/types";
 
 export const androidMobile: Device[] = [
 	// --- Samsung Galaxy S series ---
-	{ id: "galaxy-s20", name: "Samsung Galaxy S20", type: "mobile", platform: "Android", width: 360, height: 800, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "galaxy-s21", name: "Samsung Galaxy S21", type: "mobile", platform: "Android", width: 360, height: 800, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "galaxy-s22", name: "Samsung Galaxy S22", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "galaxy-s23", name: "Samsung Galaxy S23", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "galaxy-s24", name: "Samsung Galaxy S24", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "galaxy-s20-21", name: "Samsung Galaxy S20 / S21", type: "mobile", platform: "Android", width: 360, height: 800, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "galaxy-s22-23-24", name: "Samsung Galaxy S22 / S23 / S24", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
 
 	// --- Samsung Galaxy Z (foldables) ---
 	{ id: "galaxy-z-fold3", name: "Samsung Galaxy Z Fold 3", type: "mobile", platform: "Android", width: 376, height: 840, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
@@ -18,12 +15,7 @@ export const androidMobile: Device[] = [
 
 	// --- Google Pixel ---
 	{ id: "pixel-5", name: "Google Pixel 5", type: "mobile", platform: "Android", width: 393, height: 851, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "pixel-6", name: "Google Pixel 6", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "pixel-6-pro", name: "Google Pixel 6 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "pixel-7", name: "Google Pixel 7", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "pixel-7-pro", name: "Google Pixel 7 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "pixel-8", name: "Google Pixel 8", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "pixel-8-pro", name: "Google Pixel 8 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "pixel-6-8", name: "Google Pixel 6 / 6 Pro / 7 / 7 Pro / 8 / 8 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
 
 	// --- Xiaomi / Redmi / POCO ---
 	{ id: "xiaomi-mi-11", name: "Xiaomi Mi 11", type: "mobile", platform: "Android", width: 393, height: 873, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
@@ -35,21 +27,12 @@ export const androidMobile: Device[] = [
 	{ id: "poco-f4", name: "POCO F4", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
 
 	// --- OnePlus ---
-	{ id: "oneplus-8t", name: "OnePlus 8T", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "oneplus-9", name: "OnePlus 9", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "oneplus-10-pro", name: "OnePlus 10 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "oneplus-11", name: "OnePlus 11", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "oneplus-8t-9-10-11", name: "OnePlus 8T / 9 / 10 Pro / 11", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
 
 	// --- Huawei ---
-	{ id: "huawei-p40", name: "Huawei P40", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "huawei-p50", name: "Huawei P50", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "huawei-mate-40", name: "Huawei Mate 40", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "huawei-mate-50", name: "Huawei Mate 50", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "huawei-p40-50/mate-40-50", name: "Huawei P40 / P50 / Mate 40 / Mate 50", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
 
 	// --- Oppo / Vivo ---
-	{ id: "oppo-find-x3", name: "Oppo Find X3 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "oppo-find-x5", name: "Oppo Find X5 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "vivo-x60", name: "Vivo X60 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "vivo-x80", name: "Vivo X80 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
-	{ id: "vivo-x100", name: "Vivo X100 Pro (2024)", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "oppo-find-x3-x5", name: "Oppo Find X3 Pro / X5 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
+	{ id: "vivo-x60-x80-x100", name: "Vivo X60 Pro / X80 Pro / X100 Pro", type: "mobile", platform: "Android", width: 412, height: 915, statusBar: 24, browserBar: { expanded: 56, collapsed: 0 } },
 ];
