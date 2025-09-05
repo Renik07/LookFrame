@@ -1,11 +1,12 @@
 // src/components/MainDevices.tsx
 
 import { useDevices } from "@/store/useDevices";
-import IosFrame from "./IosFrame";
-import AndroidMobileFrame from "./AndroidMobileFrame";
-import WindowsFrame from "./WindowsFrame";
-import MacFrame from "./MacFrame";
-import IpadFrame from "./IpadFrame";
+import IosFrame from "./frames/IosFrame";
+import AndroidMobileFrame from "./frames/AndroidMobileFrame";
+import WindowsFrame from "./frames/WindowsFrame";
+import MacFrame from "./frames/MacFrame";
+import IpadFrame from "./frames/IpadFrame";
+import AndroidTabletFrame from "./frames/AndroidTabletFrame";
 
 export default function MainDevices() {
 	const { selected, scale, orientation } = useDevices();
@@ -39,9 +40,10 @@ export default function MainDevices() {
 						>
 							{d.platform === "iOS" && <IosFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 							{d.platform === "Android" && <AndroidMobileFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "Windows" && <WindowsFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "macOS" && <MacFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 							{d.platform === "iPadOS" && <IpadFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "macOS" && <MacFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "Windows" && <WindowsFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "AndroidTablet" && <AndroidTabletFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 						</div>
 					</div>
 				);

@@ -9,7 +9,7 @@ export const windowsDesktop: Device[] = [
 		platform: "Windows",
 		width: 1280,
 		height: 720,
-		browserBar: { expanded: 71, collapsed: 0 }
+		browserBar: { expanded: 80, collapsed: 0 }
 	},
 	{
 		id: "desktop-1080p",
