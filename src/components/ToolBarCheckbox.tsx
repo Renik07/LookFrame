@@ -49,7 +49,7 @@ export default function ToolBarCheckbox() {
 	};
 
 	return (
-		<aside className="w-full bg-gray-100 p-4 space-y-4">
+		<aside className="w-full bg-gray-100 p-4 space-y-4 rounded-sm">
 			<h3 className="font-bold mb-2">Выберите устройства</h3>
 
 			<Accordion

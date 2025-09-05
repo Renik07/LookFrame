@@ -59,7 +59,7 @@ export default function AndroidMobileFrame({ device, baseWidth, baseHeight, scal
 				>
 					{/* статус бар */}
 					<div
-						className="flex items-center justify-between"
+						className="flex items-center justify-between px-3"
 						style={{ height: statusBarHeight }}
 					>
 						<div className="font-sans tabular-nums text-[14px] leading-none font-semibold tracking-tight">

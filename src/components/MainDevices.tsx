@@ -5,6 +5,7 @@ import IosFrame from "./IosFrame";
 import AndroidMobileFrame from "./AndroidMobileFrame";
 import WindowsFrame from "./WindowsFrame";
 import MacFrame from "./MacFrame";
+import IpadFrame from "./IpadFrame";
 
 export default function MainDevices() {
 	const { selected, scale, orientation } = useDevices();
@@ -40,6 +41,7 @@ export default function MainDevices() {
 							{d.platform === "Android" && <AndroidMobileFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 							{d.platform === "Windows" && <WindowsFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 							{d.platform === "macOS" && <MacFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "iPadOS" && <IpadFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 						</div>
 					</div>
 				);
