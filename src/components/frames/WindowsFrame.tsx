@@ -3,11 +3,12 @@ import iconGoogle from "@/images/windows-desktop/i-google.png";
 import iconClose from "@/images/windows-desktop/windows-close.png";
 import iconMinimise from "@/images/windows-desktop/windows-minimise.png";
 import iconWindow from "@/images/windows-desktop/windows-window.png";
+import { FrameProps } from "@/lib/types";
 import { useDevices } from "@/store/useDevices";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function WindowsFrame({ device, baseWidth, baseHeight, scale }) {
+export default function WindowsFrame({ device, baseWidth, baseHeight, scale }: FrameProps) {
 	const { panelMode } = useDevices();
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -44,12 +45,12 @@ export default function WindowsFrame({ device, baseWidth, baseHeight, scale }) {
 							style={{ height: topHeight }}
 						>
 							{/* Tab bar */}
-							<div className="flex flex-row pl-2 bg-gray-200">
-								<div className="flex flex-row items-center flex-grow">
+							<div className="flex flex-row pl-2 bg-gray-200 р-10">
+								<div className="flex flex-row items-center flex-grow h-[100%]">
 									{/* First Tab */}
 									<div className="flex-1 max-w-[240px]">
 										<div className="relative -left-2">
-											<div className="relative z-10 flex items-center h-[34px] px-2.5 rounded-t-lg bg-white transition-all duration-100">
+											<div className="relative z-10 flex items-center h-[40px] px-2.5 rounded-t-lg bg-white transition-all duration-100">
 												<Image alt="Google" src={iconGoogle} width={16} height={16} />
 												<div className="ml-2 mr-1 flex-grow overflow-hidden text-ellipsis whitespace-nowrap text-xs text-gray-700">
 													Google
@@ -58,7 +59,7 @@ export default function WindowsFrame({ device, baseWidth, baseHeight, scale }) {
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 16 16"
-														className="absolute top-1 left-1 w-2 h-2 fill-gray-500 hover:fill-gray-700"
+														className="absolute top-1 left-1 w-2 h-2 fill-gray-500"
 													>
 														<path d="M16,1.6L14.4,0L8,6.4L1.6,0L0,1.6L6.4,8L0,14.4L1.6,16L8,9.6l6.4,6.4l1.6-1.6L9.6,8L16,1.6z" />
 													</svg>
@@ -69,7 +70,7 @@ export default function WindowsFrame({ device, baseWidth, baseHeight, scale }) {
 									{/* Second Tab */}
 									<div className="flex-1 max-w-[240px]">
 										<div className="relative -left-2">
-											<div className="relative z-10 flex items-center h-[34px] px-2.5 rounded-t-lg hover:bg-gray-100 transition">
+											<div className="relative z-10 flex items-center h-[100%] px-2.5 rounded-t-lg transition">
 												<div className="flex-grow overflow-hidden text-ellipsis whitespace-nowrap text-xs text-gray-500">
 													New Tab
 												</div>
@@ -96,20 +97,20 @@ export default function WindowsFrame({ device, baseWidth, baseHeight, scale }) {
 
 								{/* Window buttons */}
 								<div className="flex flex-row">
-									<div className="flex items-center justify-center w-[45px] h-[29px] hover:bg-gray-300">
+									<div className="flex items-center justify-center w-[45px] h-[100%] hover:bg-gray-300">
 										<Image alt="minimise" src={iconMinimise} width={10} height={10} />
 									</div>
-									<div className="flex items-center justify-center w-[45px] h-[29px] hover:bg-gray-300">
+									<div className="flex items-center justify-center w-[45px] h-[100%] hover:bg-gray-300">
 										<Image alt="window" src={iconWindow} width={10} height={10} />
 									</div>
-									<div className="flex items-center justify-center w-[45px] h-[29px] hover:bg-red-600">
+									<div className="flex items-center justify-center w-[45px] h-[100%] hover:bg-red-600">
 										<Image alt="close" src={iconClose} width={10} height={10} />
 									</div>
 								</div>
 							</div>
 
 							{/* Main bar */}
-							<div className="flex flex-row items-center h-9 px-1.5 bg-white">
+							<div className="flex flex-row items-center h-10 px-1.5 bg-white">
 								{/* Back button */}
 								<div className="flex items-center justify-center w-7 h-7 mx-0.5 rounded-full hover:bg-gray-200 active:bg-gray-300">
 									<svg viewBox="0 0 16 16" className="w-3.5 h-3.5 fill-gray-600">

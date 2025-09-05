@@ -1,18 +1,11 @@
 // src/components/IosFrame.tsx
 "use client";
-import { Device } from "@/lib/types";
+import { FrameProps } from "@/lib/types";
 import { currentTime } from "@/lib/utils";
 import { useDevices } from "@/store/useDevices";
 import { useState } from "react";
 
-type IosFrameProps = {
-	device: Device;
-	baseWidth: number;
-	baseHeight: number;
-	scale: number;
-};
-
-export default function IosFrame({ device, baseWidth, baseHeight, scale }: IosFrameProps) {
+export default function IosFrame({ device, baseWidth, baseHeight, scale }: FrameProps) {
 	const { panelMode } = useDevices();
 	const [isHovered, setIsHovered] = useState(false);
 

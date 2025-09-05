@@ -1,6 +1,6 @@
 // src/components/AndroidMobileFrame.tsx
 "use client";
-import { Device } from "@/lib/types";
+import { FrameProps } from "@/lib/types";
 import { currentTime } from "@/lib/utils";
 import { useDevices } from "@/store/useDevices";
 import { useState } from "react";
@@ -11,14 +11,7 @@ import iconMic from "@/images/chrome-mobile/i-mic.png";
 import iconTab from "@/images/chrome-mobile/i-tab.png";
 import Image from "next/image";
 
-type AndroidMobileFrameProps = {
-	device: Device;
-	baseWidth: number;
-	baseHeight: number;
-	scale: number;
-};
-
-export default function AndroidMobileFrame({ device, baseWidth, baseHeight, scale }: AndroidMobileFrameProps) {
+export default function AndroidMobileFrame({ device, baseWidth, baseHeight, scale }: FrameProps) {
 	const { panelMode } = useDevices();
 	const [isHovered, setIsHovered] = useState(false);
 

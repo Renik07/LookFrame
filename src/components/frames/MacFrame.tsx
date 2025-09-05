@@ -5,16 +5,9 @@ import iconShare from "@/images/mac-desktop/i-share.png";
 import iconTabs from "@/images/mac-desktop/i-tabs.png";
 import iconApple from "@/images/mac-desktop/i-apple.png";
 import Image from "next/image";
-import { Device } from "@/lib/types";
+import { FrameProps } from "@/lib/types";
 
-type MacFrameProps = {
-	device: Device;
-	baseWidth: number;
-	baseHeight: number;
-	scale: number;
-};
-
-export default function MacFrame({ device, baseWidth, baseHeight, scale }: MacFrameProps) {
+export default function MacFrame({ device, baseWidth, baseHeight, scale }: FrameProps) {
 	const { panelMode } = useDevices();
 	const [isHovered, setIsHovered] = useState(false);
 
