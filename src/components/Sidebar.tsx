@@ -7,7 +7,7 @@ import ToolBarScale from './ToolBarScale'
 
 export default function Sidebar() {
 	return (
-		<div className='text-black w-[310px] p-2 border-r-1 border-gray-100'>
+		<div className='text-black w-[310px] flex-none p-2 border-r-1 border-gray-100'>
 			<ToolbarDevices />
 			<ToolBarScale />
 			<ToolBarRotate />
