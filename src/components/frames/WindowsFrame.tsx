@@ -8,7 +8,7 @@ import { useDevices } from "@/store/useDevices";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function WindowsFrame({ device, baseWidth, baseHeight, scale }: FrameProps) {
+export default function WindowsFrame({ url, device, baseWidth, baseHeight, scale }: FrameProps) {
 	const { panelMode } = useDevices();
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -167,7 +167,7 @@ export default function WindowsFrame({ device, baseWidth, baseHeight, scale }: F
 
 			<iframe
 				className="relative z-0 transition-all duration-100"
-				src="https://leon-fumi.netlify.app/"
+				src={url || undefined}
 				style={{
 					width: "100%",
 					height: "100%",

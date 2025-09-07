@@ -1,24 +1,6 @@
 // src/store/useDevices.ts
 import { create } from "zustand";
-import { Device } from "@/lib/types";
-
-type Category = "mobile" | "tablet" | "desktop";
-type Orientation = "portrait" | "landscape";
-type PanelMode = "off" | "fixed" | "float";
-
-type DevicesState = {
-	selected: Device[];
-	category: Category;
-	scale: number;
-	orientation: Orientation;
-	panelMode: PanelMode;
-	setCategory: (c: Category) => void;
-	toggleDevice: (d: Device) => void;
-	setSelected: (devices: Device[]) => void;
-	setScale: (s: number) => void;
-	toggleOrientation: () => void;
-	setPanelMode: (mode: PanelMode) => void;
-};
+import { DevicesState } from "@/lib/types";
 
 export const useDevices = create<DevicesState>((set) => ({
 	selected: [],

@@ -7,7 +7,7 @@ import iconApple from "@/images/mac-desktop/i-apple.png";
 import Image from "next/image";
 import { FrameProps } from "@/lib/types";
 
-export default function MacFrame({ device, baseWidth, baseHeight, scale }: FrameProps) {
+export default function MacFrame({ url, device, baseWidth, baseHeight, scale }: FrameProps) {
 	const { panelMode } = useDevices();
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -121,7 +121,7 @@ export default function MacFrame({ device, baseWidth, baseHeight, scale }: Frame
 
 			<iframe
 				className="relative z-0 transition-all duration-100"
-				src="https://leon-fumi.netlify.app/"
+				src={url || undefined}
 				style={{
 					width: "100%",
 					height: "100%",

@@ -16,9 +16,9 @@ export default function ToolBarPanel() {
 
 	return (
 		<div className="w-full mb-3 flex items-center gap-3">
-			<h3 className="mb-1 text-black">Panel</h3>
+			<h3 className="mb-1 text-foreground">Panel</h3>
 			<Select value={panelMode} onValueChange={(v: "off" | "fixed" | "float") => setPanelMode(v)}>
-				<SelectTrigger className="w-full">
+				<SelectTrigger className="w-full text-foreground">
 					<SelectValue placeholder="Select option" />
 				</SelectTrigger>
 				<SelectContent>
