@@ -15,7 +15,7 @@ export default function ToolBarPanel() {
 	const { panelMode, setPanelMode } = useDevices();
 
 	return (
-		<div className="w-full mb-3 flex items-center gap-3">
+		<section className="w-full mb-3 flex items-center gap-3">
 			<h3 className="mb-1 text-foreground">Panel</h3>
 			<Select value={panelMode} onValueChange={(v: "off" | "fixed" | "float") => setPanelMode(v)}>
 				<SelectTrigger className="w-full text-foreground">
@@ -30,6 +30,6 @@ export default function ToolBarPanel() {
 					</SelectGroup>
 				</SelectContent>
 			</Select>
-		</div>
+		</section>
 	)
 }

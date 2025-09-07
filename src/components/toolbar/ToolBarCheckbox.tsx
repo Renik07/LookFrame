@@ -49,7 +49,7 @@ export default function ToolBarCheckbox() {
 	};
 
 	return (
-		<aside className="w-full bg-card-foreground p-4 space-y-4 rounded-sm">
+		<section className="w-full bg-card-foreground p-4 mb-3 space-y-4 rounded-sm">
 			<h3 className="font-bold mb-2 text-foreground">Выберите устройства</h3>
 			<Accordion
 				type="multiple"
@@ -63,7 +63,7 @@ export default function ToolBarCheckbox() {
 					);
 					return (
 						<AccordionItem key={platform} value={platform}>
-							<AccordionTrigger>
+							<AccordionTrigger className="cursor-pointer">
 								<div className="flex items-center gap-2">
 									<span className="font-semibold text-foreground">{platform}</span>
 								</div>
@@ -99,6 +99,6 @@ export default function ToolBarCheckbox() {
 					);
 				})}
 			</Accordion>
-		</aside>
+		</section>
 	);
 }
