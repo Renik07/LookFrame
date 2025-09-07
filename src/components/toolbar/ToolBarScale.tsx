@@ -7,7 +7,7 @@ export default function ToolBarScale() {
 	const { scale, setScale } = useDevices();
 
 	return (
-		<div className="mb-3">
+		<section className="mb-3">
 			<h3 className="mb-1 text-foreground">Zoom</h3>
 			<div className="flex items-center justify-between space-x-4">
 				<Slider
@@ -22,6 +22,6 @@ export default function ToolBarScale() {
 					{Math.round(scale * 100)}%
 				</span>
 			</div>
-		</div>
+		</section>
 	);
 }

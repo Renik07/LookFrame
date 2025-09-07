@@ -4,12 +4,12 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-
-import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { ChangeEvent, useEffect, useState } from "react"
 import LanguageToggle from "./LanguageToggle"
 import MainDevices from "./MainDevices"
+import ButtonDarkTheme from "./ButtonDarkTheme"
+import DonateInfo from "./DonateInfo"
 
 export default function Main() {
 	const { theme, setTheme } = useTheme()
@@ -34,25 +34,13 @@ export default function Main() {
 	if (!mounted) return null
 
 	return (
-		<div className='grow p-2'>
-			<div className='flex items-center mb-4'>
-				<div>
-				</div>
+		<div className='flex flex-col grow p-2'>
+			<div className='flex items-center mb-2 gap-2'>
 				<Input onChange={handleChange} value={inputValue} placeholder="Enter a website URL" className="max-w-[600px]" />
-				<Button onClick={handleClick} className="cursor-pointer ml-2">GO</Button>
+				<Button onClick={handleClick} className="cursor-pointer">GO</Button>
+				<DonateInfo />
 				<LanguageToggle />
-				<Button
-					variant="outline"
-					size="icon"
-					className="ml-4"
-					onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-				>
-					{theme === "light" ? (
-						<Sun className="h-[1.2rem] w-[1.2rem]" />
-					) : (
-						<Moon className="h-[1.2rem] w-[1.2rem]" />
-					)}
-				</Button>
+				<ButtonDarkTheme theme={theme} setTheme={setTheme} />
 			</div>
 			<Separator className="mb-4" />
 			<MainDevices url={url} />

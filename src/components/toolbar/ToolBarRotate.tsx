@@ -8,7 +8,7 @@ export default function ToolBarRotate() {
 	const { orientation, toggleOrientation } = useDevices();
 
 	return (
-		<div className="flex items-center justify-between mb-3">
+		<section className="flex items-center justify-between mb-3">
 			<Label className="text-foreground" htmlFor="rotate">Rotate</Label>
 			<Switch
 				id="rotate"
@@ -16,6 +16,6 @@ export default function ToolBarRotate() {
 				checked={orientation === "landscape"}
 				onCheckedChange={toggleOrientation}
 			/>
-		</div>
+		</section>
 	)
 }

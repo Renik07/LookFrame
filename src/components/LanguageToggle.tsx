@@ -7,7 +7,7 @@ export default function LanguageToggle() {
 	return (
 		<div className="ml-auto">
 			<Select value={locale} onValueChange={(v: "en" | "es" | "de" | "fr" | "ru") => setLocale(v)}>
-				<SelectTrigger className="text-foreground">
+				<SelectTrigger className="text-foreground cursor-pointer">
 					<SelectValue placeholder="Select language" />
 				</SelectTrigger>
 				<SelectContent>
