@@ -13,17 +13,17 @@ export default function ToolbarDevices() {
 	const { category, setCategory } = useDevices();
 
 	return (
-		<div>
-			<h3 className="mb-1">{t('devices')}</h3>
-			<div className="flex justify-around border-1 rounded-sm p-1">
-				<button className={`cursor-pointer p-0.5 rounded ${category === "mobile" ? "bg-gray-200" : ""}`} onClick={() => setCategory("mobile")}>
-					<Image src={iconMob} alt="mobile" width={30} height={35} />
+		<div className='mb-3'>
+			<h3 className="text-foreground mb-1">{t('devices')}</h3>
+			<div className="flex justify-around border-1 rounded-sm p-1 border">
+				<button className={`flex justify-center grow cursor-pointer rounded ${category === "mobile" ? "bg-card-foreground" : ""}`} onClick={() => setCategory("mobile")}>
+					<Image className="dark:invert" src={iconMob} alt="mobile" width={30} height={35} />
 				</button>
-				<button className={`cursor-pointer p-1 rounded ${category === "tablet" ? "bg-gray-200" : ""}`} onClick={() => setCategory("tablet")}>
-					<Image src={iconTab} alt="tablet" width={33} height={37} />
+				<button className={`flex justify-center grow cursor-pointer rounded ${category === "tablet" ? "bg-card-foreground" : ""}`} onClick={() => setCategory("tablet")}>
+					<Image className="dark:invert" src={iconTab} alt="tablet" width={33} height={37} />
 				</button>
-				<button className={`cursor-pointer p-1 rounded ${category === "desktop" ? "bg-gray-200" : ""}`} onClick={() => setCategory("desktop")}>
-					<Image src={iconDesk} alt="desktop" width={49} height={42} />
+				<button className={`flex justify-center grow cursor-pointer rounded ${category === "desktop" ? "bg-card-foreground" : ""}`} onClick={() => setCategory("desktop")}>
+					<Image className="dark:invert" src={iconDesk} alt="desktop" width={49} height={42} />
 				</button>
 			</div>
 		</div>

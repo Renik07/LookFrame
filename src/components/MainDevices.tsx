@@ -8,7 +8,7 @@ import MacFrame from "./frames/MacFrame";
 import IpadFrame from "./frames/IpadFrame";
 import AndroidTabletFrame from "./frames/AndroidTabletFrame";
 
-export default function MainDevices() {
+export default function MainDevices({ url }: { url: string }) {
 	const { selected, scale, orientation } = useDevices();
 
 	return (
@@ -29,21 +29,21 @@ export default function MainDevices() {
 							height: scaledHeight,
 						}}
 					>
-						<div className="bg-gray-200 px-2 py-1 text-sm font-medium w-full text-center truncate">
+						<div className="bg-card-foreground px-2 py-1 text-sm font-medium w-full text-center truncate">
 							{d.name} ({baseWidth}x{baseHeight})
 						</div>
 						<div
-							className="border shadow overflow-hidden relative"
+							className="shadow overflow-hidden relative"
 							style={{
 								height: "100%",
 							}}
 						>
-							{d.platform === "iOS" && <IosFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "Android" && <AndroidMobileFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "iPadOS" && <IpadFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "macOS" && <MacFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "Windows" && <WindowsFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
-							{d.platform === "AndroidTablet" && <AndroidTabletFrame device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "iOS" && <IosFrame url={url} device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "Android" && <AndroidMobileFrame url={url} device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "iPadOS" && <IpadFrame url={url} device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "macOS" && <MacFrame url={url} device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "Windows" && <WindowsFrame url={url} device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
+							{d.platform === "AndroidTablet" && <AndroidTabletFrame url={url} device={d} baseWidth={baseWidth} baseHeight={baseHeight} scale={scale} />}
 						</div>
 					</div>
 				);

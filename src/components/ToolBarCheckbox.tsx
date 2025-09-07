@@ -49,9 +49,8 @@ export default function ToolBarCheckbox() {
 	};
 
 	return (
-		<aside className="w-full bg-gray-100 p-4 space-y-4 rounded-sm">
-			<h3 className="font-bold mb-2">Выберите устройства</h3>
-
+		<aside className="w-full bg-card-foreground p-4 space-y-4 rounded-sm">
+			<h3 className="font-bold mb-2 text-foreground">Выберите устройства</h3>
 			<Accordion
 				type="multiple"
 				value={openAccordions}
@@ -62,23 +61,23 @@ export default function ToolBarCheckbox() {
 					const allChecked = devicesInPlatform.every((d) =>
 						selected.some((s) => s.id === d.id)
 					);
-
 					return (
 						<AccordionItem key={platform} value={platform}>
 							<AccordionTrigger>
 								<div className="flex items-center gap-2">
-									<span className="font-semibold">{platform}</span>
+									<span className="font-semibold text-foreground">{platform}</span>
 								</div>
 							</AccordionTrigger>
 							<AccordionContent className="pl-6 space-y-2">
 								<div className="flex items-center gap-2 mb-2">
 									<Checkbox
+										className="border-[var(--border-checkbox)]"
 										checked={allChecked}
 										onCheckedChange={() =>
 											handleToggleAllInPlatform(platform, devicesInPlatform)
 										}
 									/>
-									<Label className="font-medium">Выбрать все</Label>
+									<Label className="font-medium text-foreground">Выбрать все</Label>
 								</div>
 
 								{devicesInPlatform.map((d) => {
@@ -86,11 +85,12 @@ export default function ToolBarCheckbox() {
 									return (
 										<div key={d.id} className="flex items-center gap-2">
 											<Checkbox
+												className="border-[var(--border-checkbox)]"
 												id={d.id}
 												checked={isChecked}
 												onCheckedChange={() => toggleDevice(d)}
 											/>
-											<Label htmlFor={d.id}>{d.name}</Label>
+											<Label className="text-foreground cursor-pointer" htmlFor={d.id}>{d.name}</Label>
 										</div>
 									);
 								})}

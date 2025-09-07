@@ -9,7 +9,7 @@ export default function ToolBarRotate() {
 
 	return (
 		<div className="flex items-center justify-between mb-3">
-			<Label htmlFor="rotate">Rotate</Label>
+			<Label className="text-foreground" htmlFor="rotate">Rotate</Label>
 			<Switch
 				id="rotate"
 				className="cursor-pointer"
