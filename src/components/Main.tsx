@@ -34,7 +34,7 @@ export default function Main() {
 	if (!mounted) return null
 
 	return (
-		<div className='flex flex-col grow p-2'>
+		<div className='relative flex flex-col grow p-2'>
 			<div className='flex items-center mb-2 gap-2'>
 				<Input onChange={handleChange} value={inputValue} placeholder="Enter a website URL" className="max-w-[600px]" />
 				<Button onClick={handleClick} className="cursor-pointer">GO</Button>
@@ -44,6 +44,9 @@ export default function Main() {
 			</div>
 			<Separator className="mb-4" />
 			<MainDevices url={url} />
+			<div className="absolute bottom-2 right-2 text-xs text-muted-foreground">
+				<span>ver1.0.0</span>
+			</div>
 		</div>
 	)
 }

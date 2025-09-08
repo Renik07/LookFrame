@@ -157,6 +157,35 @@
 	animation: gradient-move 4s ease infinite;
 }
 
+@keyframes heartbeat-pixel {
+	0% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(1.2);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.pixel-heart {
+	display: inline-block;
+	transform-origin: center;
+	animation: heartbeat-pixel 2.5s steps(2, end) infinite;
+}
+
+
 /*  */
 @layer base {
 	* {
