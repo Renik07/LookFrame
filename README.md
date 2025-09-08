@@ -38,4 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 https://ui.shadcn.com/docs/components/accordion
 https://tailwindcss.com/docs/color
 
-look-frame.com
+1. look-frame.com
+2. https://ui.shadcn.com/docs/components/tabs for donate
+3. https://ui.shadcn.com/docs/components/sonner after copy address (address copied)
