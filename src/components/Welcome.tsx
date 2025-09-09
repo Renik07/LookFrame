@@ -6,7 +6,7 @@ export default function Welcome({ url, isSelectedEmpty }: { url: string, isSelec
 		<section className="grow relative w-full flex flex-col">
 			{!url && <HintEnterUrl />}
 			{isSelectedEmpty && url && <HintSelectDevice />}
-			<div className="flex items-center justify-center flex-col text-center text-lg h-[90vh] text-muted-foreground">
+			<div className="flex items-center justify-center flex-col text-center text-lg h-[80vh] text-muted-foreground">
 				<h1 className="hue-text font-lato font-black text-9xl text-foreground mb-10 pointer-events-none">LookFrame</h1>
 				<h2 className="text-foreground">
 					Посмотри на свой сайт в любой рамке: телефон, планшет, ноутбук или экран побольше.
