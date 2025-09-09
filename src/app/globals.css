@@ -9,6 +9,7 @@
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--font-caveat: var(--font-caveat), cursive;
+	--font-lato: var(--font-lato);
 	--color-sidebar-ring: var(--sidebar-ring);
 	--color-sidebar-border: var(--sidebar-border);
 	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -185,6 +186,22 @@
 	animation: heartbeat-pixel 2.5s steps(2, end) infinite;
 }
 
+@keyframes hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+.hue-text {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+}
 
 /*  */
 @layer base {
