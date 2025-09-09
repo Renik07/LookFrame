@@ -1,5 +1,64 @@
 {
-	"ToolbarDevices": {
-		"devices": "Devices"
+	"ToolBarDevices": {
+		"devices": "Devices",
+		"mobile": "Mobile",
+		"tablet": "Tablet",
+		"desktop": "Desktop"
+	},
+	"ToolBarScale": {
+		"zoom": "Zoom"
+	},
+	"ToolBarRotate": {
+		"rotate": "Rotate"
+	},
+	"ToolBarPanel": {
+		"panel": "Panel",
+		"off": "Off",
+		"fixed": "Fixed",
+		"float": "Floating"
+	},
+	"ToolBarCheckbox": {
+		"select-devices": "Select devices",
+		"select-all": "Select all"
+	},
+	"Main": {
+		"input-url-placeholder": "Enter a website URL",
+		"button": "Go"
+	},
+	"DonateInfo": {
+		"toast-text": "Address copied to clipboard",
+		"button": "Support us",
+		"button-copy": "Copy",
+		"title": "Donate",
+		"desc": "Like the service? Support it with cryptocurrency — it will help the project grow further!",
+		"btc-desc": "Only send Bitcoin (BTC) to this address. Other assets will be lost permanently.",
+		"eth-desc": "Only send Ethereum (ETH) to this address. Other assets will be lost permanently.",
+		"usdt-desc": "Only send Tether (TRC20) to this address. Other assets will be lost permanently.",
+		"bnb-desc": "Only send BNB Smart Chain (BNB) to this address. Other assets will be lost permanently.",
+		"sol-desc": "Only send Solana (SOL) to this address. Other assets will be lost permanently.",
+		"xrp-desc": "Only send XRP (XRP) to this address. Other assets will be lost permanently.",
+		"gratitude": "Thank you!"
+	},
+	"LanguageToggle": {
+		"lang": "Language"
+	},
+	"Welcome": {
+		"title-h2": "See your website in any frame: phone, tablet, laptop, or a bigger screen.",
+		"title-h3": "Test responsiveness to ensure your site is convenient for every user.",
+		"title-h4": "Completely free, fully visual!"
+	},
+	"HintEnterUrl": {
+		"text-1": "Enter a",
+		"text-2": "website address"
+	},
+	"HintSelectDevice": {
+		"text-1": "Select a",
+		"text-2": "device"
+	},
+	"ToolBarCopyright": {
+		"text": "All rights reserved."
+	},
+	"": {
+		"": ""
 	}
 }

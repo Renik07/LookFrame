@@ -9,8 +9,9 @@ import en from "../../messages/en.json";
 import ru from "../../messages/ru.json";
 import de from "../../messages/de.json";
 import es from "../../messages/es.json";
+import fr from "../../messages/fr.json";
 
-const allMessages: Record<string, Messages> = { en, ru, de, es };
+const allMessages: Record<string, Messages> = { en, ru, de, es, fr };
 type Locale = keyof typeof allMessages;
 
 type Ctx = {

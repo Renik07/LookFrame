@@ -1,0 +1,64 @@
+{
+	"ToolBarDevices": {
+		"devices": "Appareils",
+		"mobile": "Téléphone",
+		"tablet": "Tablette",
+		"desktop": "Ordinateur"
+	},
+	"ToolBarScale": {
+		"zoom": "Zoom"
+	},
+	"ToolBarRotate": {
+		"rotate": "Rotation"
+	},
+	"ToolBarPanel": {
+		"panel": "Panneau",
+		"off": "Désactivé",
+		"fixed": "Fixe",
+		"float": "Flottant"
+	},
+	"ToolBarCheckbox": {
+		"select-devices": "Sélectionner des appareils",
+		"select-all": "Tout sélectionner"
+	},
+	"Main": {
+		"input-url-placeholder": "Entrez l’URL d’un site web",
+		"button": "Aller"
+	},
+	"DonateInfo": {
+		"toast-text": "Adresse copiée dans le presse-papiers",
+		"button": "Nous soutenir",
+		"button-copy": "Copier",
+		"title": "Faire un don",
+		"desc": "Vous aimez le service ? Soutenez-le avec des cryptomonnaies — cela aidera à faire grandir le projet !",
+		"btc-desc": "Envoyez uniquement du Bitcoin (BTC) à cette adresse. Tout autre actif sera perdu définitivement.",
+		"eth-desc": "Envoyez uniquement de l’Ethereum (ETH) à cette adresse. Tout autre actif sera perdu définitivement.",
+		"usdt-desc": "Envoyez uniquement du Tether (TRC20) à cette adresse. Tout autre actif sera perdu définitivement.",
+		"bnb-desc": "Envoyez uniquement du BNB Smart Chain (BNB) à cette adresse. Tout autre actif sera perdu définitivement.",
+		"sol-desc": "Envoyez uniquement du Solana (SOL) à cette adresse. Tout autre actif sera perdu définitivement.",
+		"xrp-desc": "Envoyez uniquement du XRP (XRP) à cette adresse. Tout autre actif sera perdu définitivement.",
+		"gratitude": "Merci !"
+	},
+	"LanguageToggle": {
+		"lang": "Langue"
+	},
+	"Welcome": {
+		"title-h2": "Voyez votre site dans n’importe quel cadre : téléphone, tablette, ordinateur portable ou grand écran.",
+		"title-h3": "Testez la réactivité pour que votre site soit pratique pour chaque utilisateur.",
+		"title-h4": "Entièrement gratuit et visuel !"
+	},
+	"HintEnterUrl": {
+		"text-1": "Entrez",
+		"text-2": "l’adresse du site"
+	},
+	"HintSelectDevice": {
+		"text-1": "Sélectionnez",
+		"text-2": "un appareil"
+	},
+	"ToolBarCopyright": {
+		"text": "Tous droits réservés."
+	},
+	"": {
+		"": ""
+	}
+}

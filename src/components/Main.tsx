@@ -10,10 +10,11 @@ import LanguageToggle from "./LanguageToggle"
 import MainDevices from "./MainDevices"
 import ButtonDarkTheme from "./ButtonDarkTheme"
 import DonateInfo from "./DonateInfo"
-import Copyright from "./Copyright"
 import Version from "./Version"
+import { useTranslations } from "next-intl"
 
 export default function Main() {
+	const t = useTranslations('Main');
 	const { theme, setTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 	const [inputValue, setInputValue] = useState("")
@@ -46,16 +47,15 @@ export default function Main() {
 						}
 					}}
 					value={inputValue}
-					placeholder="Enter a website URL"
+					placeholder={t('input-url-placeholder')}
 					className="max-w-[600px]" />
-				<Button onClick={handleClick} className="cursor-pointer">GO</Button>
+				<Button onClick={handleClick} className="cursor-pointer">{t('button')}</Button>
 				<DonateInfo />
 				<LanguageToggle />
 				<ButtonDarkTheme theme={theme} setTheme={setTheme} />
 			</div>
 			<Separator className="mb-4" />
 			<MainDevices url={url} />
-			<Copyright />
 			<Version />
 		</div>
 	)

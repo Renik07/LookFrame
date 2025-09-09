@@ -12,8 +12,8 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-export default function ToolbarDevices() {
-	const t = useTranslations('ToolbarDevices');
+export default function ToolBarDevices() {
+	const t = useTranslations('ToolBarDevices');
 
 	const { category, setCategory } = useDevices();
 
@@ -29,7 +29,7 @@ export default function ToolbarDevices() {
 							</button>
 						</TooltipTrigger>
 						<TooltipContent>
-							<p>Mobile</p>
+							<p>{t('mobile')}</p>
 						</TooltipContent>
 					</Tooltip>
 				</div>
@@ -41,7 +41,7 @@ export default function ToolbarDevices() {
 							</button>
 						</TooltipTrigger>
 						<TooltipContent>
-							<p>Tablet</p>
+							<p>{t('tablet')}</p>
 						</TooltipContent>
 					</Tooltip>
 				</div>
@@ -53,7 +53,7 @@ export default function ToolbarDevices() {
 							</button>
 						</TooltipTrigger>
 						<TooltipContent>
-							<p>Desktop</p>
+							<p>{t('desktop')}</p>
 						</TooltipContent>
 					</Tooltip>
 				</div>

@@ -32,8 +32,11 @@ import xrpIcon from '@/images/crypto/xrp-icon.svg'
 import copyIcon from '@/images/i-copy.svg'
 import trustWalletImg from '@/images/crypto/trust-wallet.png'
 import likeIcon from '@/images/i-like.svg'
+import { useTranslations } from "next-intl"
 
 export default function DonateInfo() {
+	const t = useTranslations('DonateInfo');
+
 	const tabTriggerClass = "group data-[state=active]:text-white rounded-xl cursor-pointer px-3";
 	const addresses = {
 		btc: BTC_ADDRESS,
@@ -50,7 +53,7 @@ export default function DonateInfo() {
 		toast(currency.toUpperCase(), {
 			description: (
 				<div className="text-foreground">
-					Address copied to clipboard
+					{t('toast-text')}
 				</div>
 			),
 		})
@@ -60,12 +63,12 @@ export default function DonateInfo() {
 		<div className="ml-2">
 			<Drawer>
 				<DrawerTrigger asChild>
-					<Button className="cursor-pointer animate-gradient bg-gradient-to-r from-[#3787F0] to-[#9345ff] text-white" variant="outline">Support us</Button>
+					<Button className="cursor-pointer animate-gradient bg-gradient-to-r from-[#3787F0] to-[#9345ff] text-white" variant="outline">{t('button')}</Button>
 				</DrawerTrigger>
 				<DrawerContent>
 					<DrawerHeader>
-						<DrawerTitle className="text-4xl">Donate</DrawerTitle>
-						<DrawerDescription className="mb-2">Please consider supporting our project with a cryptocurrency donation</DrawerDescription>
+						<DrawerTitle className="text-4xl">{t('title')}</DrawerTitle>
+						<DrawerDescription className="mb-2">{t('desc')}</DrawerDescription>
 						<div className="max-w-110 px-2 sm:px-0 m-auto">
 							<Tabs defaultValue="btc">
 								<TabsList className="bg-card-foreground">
@@ -110,7 +113,7 @@ export default function DonateInfo() {
 									<Card>
 										<CardHeader>
 											<CardTitle className="text-foreground">Bitcoin (BTC)</CardTitle>
-											<CardDescription>Only send Bitcoin(BTC) assets to this address. Other assets will be lost forever.</CardDescription>
+											<CardDescription>{t('btc-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={BTC_URI} size={175} />
@@ -121,12 +124,12 @@ export default function DonateInfo() {
 													onClick={() => handleCopy('btc')}
 												>
 													<Image className="dark:invert" src={copyIcon} width={15} height={15} alt="copy" />
-													Copy
+													{t('button-copy')}
 												</Button>
 												<Button asChild className="bg-[#FF7C00]">
 													<div className="flex items-center">
 														<Image className="" src={trustWalletImg} width={15} height={15} alt="trust wallet" />
-														<Link className="" href={BTC_LINK} target="_blank">Pay us via Trust Wallet</Link>
+														<Link className="" href={BTC_LINK} target="_blank">Trust wallet</Link>
 													</div>
 												</Button>
 											</div>
@@ -138,7 +141,7 @@ export default function DonateInfo() {
 									<Card>
 										<CardHeader>
 											<CardTitle className="text-foreground">Ethereum (ETH)</CardTitle>
-											<CardDescription>Only send Ethereum(ETH) assets to this address. Other assets will be lost forever.</CardDescription>
+											<CardDescription>{t('eth-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={ETH_URI} size={175} />
@@ -149,12 +152,12 @@ export default function DonateInfo() {
 													onClick={() => handleCopy('eth')}
 												>
 													<Image className="dark:invert" src={copyIcon} width={15} height={15} alt="copy" />
-													Copy
+													{t('button-copy')}
 												</Button>
 												<Button asChild className="bg-[#4384D4]">
 													<div className="flex items-center">
 														<Image className="" src={trustWalletImg} width={15} height={15} alt="trust wallet" />
-														<Link className="" href={ETH_LINK} target="_blank">Pay us via Trust Wallet</Link>
+														<Link className="" href={ETH_LINK} target="_blank">Trust wallet</Link>
 													</div>
 												</Button>
 											</div>
@@ -166,7 +169,7 @@ export default function DonateInfo() {
 									<Card>
 										<CardHeader>
 											<CardTitle className="text-foreground">USDT (ETH)</CardTitle>
-											<CardDescription>Only send Tether(TRC20) assets to this address. Other assets will be lost forever.</CardDescription>
+											<CardDescription>{t('usdt-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={USDT_URI} size={175} />
@@ -177,12 +180,12 @@ export default function DonateInfo() {
 													onClick={() => handleCopy('usdt')}
 												>
 													<Image className="dark:invert" src={copyIcon} width={15} height={15} alt="copy" />
-													Copy
+													{t('button-copy')}
 												</Button>
 												<Button asChild className="bg-[#2FAA9C]">
 													<div className="flex items-center">
 														<Image className="" src={trustWalletImg} width={15} height={15} alt="trust wallet" />
-														<Link className="" href={USDT_LINK} target="_blank">Pay us via Trust Wallet</Link>
+														<Link className="" href={USDT_LINK} target="_blank">Trust wallet</Link>
 													</div>
 												</Button>
 											</div>
@@ -194,7 +197,7 @@ export default function DonateInfo() {
 									<Card>
 										<CardHeader>
 											<CardTitle className="text-foreground">BNB Smart Chain (BNB)</CardTitle>
-											<CardDescription>Only send BNB Smart Chain (BNB) assets to this address. Other assets will be lost forever.</CardDescription>
+											<CardDescription>{t('bnb-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={BNB_URI} size={175} />
@@ -205,12 +208,12 @@ export default function DonateInfo() {
 													onClick={() => handleCopy('bnb')}
 												>
 													<Image className="dark:invert" src={copyIcon} width={15} height={15} alt="copy" />
-													Copy
+													{t('button-copy')}
 												</Button>
 												<Button asChild className="">
 													<div className="flex items-center">
 														<Image className="" src={trustWalletImg} width={15} height={15} alt="trust wallet" />
-														<Link className="" href={BNB_LINK} target="_blank">Pay us via Trust Wallet</Link>
+														<Link className="" href={BNB_LINK} target="_blank">Trust wallet</Link>
 													</div>
 												</Button>
 											</div>
@@ -222,7 +225,7 @@ export default function DonateInfo() {
 									<Card>
 										<CardHeader>
 											<CardTitle className="text-foreground">Solana (SOL)</CardTitle>
-											<CardDescription>Only send Solana(SOL) assets to this address. Other assets will be lost forever.</CardDescription>
+											<CardDescription>{t('sol-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={SOL_URI} size={175} />
@@ -233,12 +236,12 @@ export default function DonateInfo() {
 													onClick={() => handleCopy('sol')}
 												>
 													<Image className="dark:invert" src={copyIcon} width={15} height={15} alt="copy" />
-													Copy
+													{t('button-copy')}
 												</Button>
 												<Button asChild className="">
 													<div className="flex items-center">
 														<Image className="" src={trustWalletImg} width={15} height={15} alt="trust wallet" />
-														<Link className="" href={SOL_LINK} target="_blank">Pay us via Trust Wallet</Link>
+														<Link className="" href={SOL_LINK} target="_blank">Trust wallet</Link>
 													</div>
 												</Button>
 											</div>
@@ -250,7 +253,7 @@ export default function DonateInfo() {
 									<Card>
 										<CardHeader>
 											<CardTitle className="text-foreground">XRP (XRP)</CardTitle>
-											<CardDescription>Only send XRP(XRP) assets to this address. Other assets will be lost forever.</CardDescription>
+											<CardDescription>{t('xrp-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={XRP_URI} size={175} />
@@ -261,12 +264,12 @@ export default function DonateInfo() {
 													onClick={() => handleCopy('xrp')}
 												>
 													<Image className="dark:invert" src={copyIcon} width={15} height={15} alt="copy" />
-													Copy
+													{t('button-copy')}
 												</Button>
 												<Button asChild className="">
 													<div className="flex items-center">
 														<Image className="" src={trustWalletImg} width={15} height={15} alt="trust wallet" />
-														<Link className="" href={XRP_LINK} target="_blank">Pay us via Trust Wallet</Link>
+														<Link className="" href={XRP_LINK} target="_blank">Trust wallet</Link>
 													</div>
 												</Button>
 											</div>
@@ -279,7 +282,7 @@ export default function DonateInfo() {
 					</DrawerHeader>
 					<DrawerFooter className="pt-0">
 						<div className="flex items-center justify-center gap-2">
-							<DrawerTitle className="text-center">Thank you!</DrawerTitle>
+							<DrawerTitle className="text-center">{t('gratitude')}</DrawerTitle>
 							<Image className="pixel-heart" src={likeIcon} width={30} height={30} alt="like" />
 						</div>
 					</DrawerFooter>
