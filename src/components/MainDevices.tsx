@@ -14,7 +14,7 @@ export default function MainDevices({ url }: { url: string }) {
 	const { selected, scale, orientation } = useDevices();
 	const [isSelectedEmpty, setIsSelectedEmpty] = useState(selected.length === 0);
 
-	if (selected.length === 0 && !url) {
+	if (selected.length === 0) {
 		return (
 			<Welcome url={url} isSelectedEmpty={isSelectedEmpty} />
 		);

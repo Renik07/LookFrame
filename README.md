@@ -39,5 +39,8 @@ https://ui.shadcn.com/docs/components/accordion
 https://tailwindcss.com/docs/color
 
 1. look-frame.com
-2. https://ui.shadcn.com/docs/components/tabs for donate
-3. https://ui.shadcn.com/docs/components/sonner after copy address (address copied)
+2. Кнопка скрин экрана
+3. Ввод адреса по Enter
+4. Welcome comp grad animation LookFrame
+
+© 2025 LookFrame. All rights reserved.
