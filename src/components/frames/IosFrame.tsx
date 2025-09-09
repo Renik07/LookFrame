@@ -1,7 +1,7 @@
 // src/components/IosFrame.tsx
 "use client";
 import { FrameProps } from "@/lib/types";
-import { currentTime } from "@/lib/utils";
+import { getCurrentTime } from "@/lib/utils";
 import { useDevices } from "@/store/useDevices";
 import { useState } from "react";
 
@@ -39,7 +39,7 @@ export default function IosFrame({ url, device, baseWidth, baseHeight, scale }: 
 				>
 					<div className="flex items-center justify-between h-[100%]">
 						<div className="font-sans tabular-nums text-[14px] text-black leading-none font-semibold tracking-tight">
-							{currentTime()}
+							{getCurrentTime()}
 						</div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="66.7" height="11.3" className=""><g opacity=".35" fill="none"><path d="M45 .033h16.7c1.5 0 2.7 1.2 2.7 2.7v6c0 1.5-1.2 2.7-2.7 2.7H45c-1.5 0-2.7-1.2-2.7-2.7v-6c0-1.5 1.2-2.7 2.7-2.7z"></path><path d="M45 .533h16.7c1.2 0 2.2 1 2.2 2.2v6c0 1.2-1 2.2-2.2 2.2H45c-1.2 0-2.2-1-2.2-2.2v-6c0-1.3 1-2.2 2.2-2.2z" stroke="#000" strokeMiterlimit="10"></path></g><path d="M65.3 3.7v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2" opacity=".4"></path><path d="M45.7 2H61c.7 0 1.3.6 1.3 1.3V8c0 .7-.6 1.3-1.3 1.3H45.7c-.7 0-1.3-.6-1.3-1.3V3.3c-.1-.7.5-1.3 1.3-1.3zM29.7 11c-.1 0-.2 0-.2-.1l-2-2c-.1-.1-.1-.3 0-.4 1.3-1.1 3.1-1.1 4.4 0 0 0 .1 0 .1.1s0 .2-.1.2l-2 2-.2.2z"></path><path d="M33.2 7.4c-.1 0-.2 0-.2-.1-1.9-1.7-4.7-1.7-6.6 0-.1.1-.1.1-.2.1s-.2 0-.2-.1l-1.2-1.2c-.1-.1-.1-.3 0-.5 2.7-2.6 7-2.6 9.8 0 .1.1.1.1.1.2s0 .2-.1.2l-1.2 1.2c-.1.2-.1.2-.2.2z"></path><path d="M35.8 4.7c-.1 0-.2 0-.2-.1-3.3-3.2-8.6-3.2-11.9 0-.1.1-.1.1-.2.1s-.2 0-.2-.1l-1.2-1.2c-.1 0-.1-.2 0-.4C26.3-1 33-1 37.2 3c.1.1.1.1.1.2s0 .2-.1.2L36 4.6c0 .1-.1.1-.2.1zM16 11h-1c-.6 0-1-.4-1-1V1.3c0-.6.4-1 1-1h1c.6 0 1 .4 1 1V10c0 .6-.4 1-1 1zM11.3 11h-1c-.6 0-1-.4-1-1V3.7c0-.6.4-1 1-1h1c.6 0 1 .4 1 1V10c0 .6-.4 1-1 1zM6.7 11h-1c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c.6 0 1 .4 1 1v4c0 .6-.5 1-1 1zM2 11H1c-.6 0-1-.4-1-1V8c0-.6.4-1 1-1h1c.6 0 1 .4 1 1v2c0 .6-.4 1-1 1z"></path></svg>
 					</div>
@@ -96,10 +96,8 @@ export default function IosFrame({ url, device, baseWidth, baseHeight, scale }: 
 							{/* tabs */}
 							{<svg width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><path d="M3.96 17.626h1.898v1.764c0 2.112 1.077 3.178 3.22 3.178h10.95c2.144 0 3.22-1.066 3.22-3.178V8.49c0-2.102-1.076-3.169-3.22-3.169h-1.896v-1.66c0-2.113-1.087-3.18-3.22-3.18H3.961C1.808.481.74 1.548.74 3.661v10.796c0 2.113 1.067 3.169 3.22 3.169zm.021-1.65c-1.025 0-1.589-.544-1.589-1.61V3.751c0-1.066.564-1.62 1.59-1.62h10.9c1.014 0 1.599.554 1.599 1.62v1.57H9.078c-2.143 0-3.22 1.055-3.22 3.168v7.485H3.98zm5.127 4.941c-1.025 0-1.6-.553-1.6-1.62V8.582c0-1.066.575-1.61 1.6-1.61h10.9c1.015 0 1.59.544 1.59 1.61v10.726c0 1.056-.575 1.61-1.59 1.61h-10.9z" fill="#2E7CF6"></path></svg>}
 						</div>
-
 					)}
 				</div>
-
 			)}
 		</div>
 	)

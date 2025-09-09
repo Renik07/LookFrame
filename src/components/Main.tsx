@@ -10,6 +10,8 @@ import LanguageToggle from "./LanguageToggle"
 import MainDevices from "./MainDevices"
 import ButtonDarkTheme from "./ButtonDarkTheme"
 import DonateInfo from "./DonateInfo"
+import Copyright from "./Copyright"
+import Version from "./Version"
 
 export default function Main() {
 	const { theme, setTheme } = useTheme()
@@ -34,9 +36,18 @@ export default function Main() {
 	if (!mounted) return null
 
 	return (
-		<div className='relative flex flex-col grow p-2'>
+		<div className='relative flex flex-col grow p-2 pb-8'>
 			<div className='flex items-center mb-2 gap-2'>
-				<Input onChange={handleChange} value={inputValue} placeholder="Enter a website URL" className="max-w-[600px]" />
+				<Input
+					onChange={handleChange}
+					onKeyDown={(e) => {
+						if (e.key === "Enter") {
+							handleClick()
+						}
+					}}
+					value={inputValue}
+					placeholder="Enter a website URL"
+					className="max-w-[600px]" />
 				<Button onClick={handleClick} className="cursor-pointer">GO</Button>
 				<DonateInfo />
 				<LanguageToggle />
@@ -44,9 +55,8 @@ export default function Main() {
 			</div>
 			<Separator className="mb-4" />
 			<MainDevices url={url} />
-			<div className="absolute bottom-2 right-2 text-xs text-muted-foreground">
-				<span>ver1.0.0</span>
-			</div>
+			<Copyright />
+			<Version />
 		</div>
 	)
 }
