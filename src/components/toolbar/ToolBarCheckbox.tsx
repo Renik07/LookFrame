@@ -11,8 +11,10 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useTranslations } from "next-intl";
 
 export default function ToolBarCheckbox() {
+	const t = useTranslations('ToolBarCheckbox');
 	const { selected, toggleDevice, setSelected, category } = useDevices();
 
 	// локальный стейт для открытых аккордеонов
@@ -50,7 +52,7 @@ export default function ToolBarCheckbox() {
 
 	return (
 		<section className="w-full bg-card-foreground p-4 mb-3 space-y-4 rounded-sm">
-			<h3 className="font-bold mb-2 text-foreground">Выберите устройства</h3>
+			<h3 className="font-bold mb-2 text-foreground">{t('select-devices')}</h3>
 			<Accordion
 				type="multiple"
 				value={openAccordions}
@@ -77,7 +79,7 @@ export default function ToolBarCheckbox() {
 											handleToggleAllInPlatform(platform, devicesInPlatform)
 										}
 									/>
-									<Label className="font-medium text-foreground">Выбрать все</Label>
+									<Label className="font-medium text-foreground">{t('select-all')}</Label>
 								</div>
 
 								{devicesInPlatform.map((d) => {

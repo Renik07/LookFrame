@@ -1,5 +1,64 @@
 {
-	"ToolbarDevices": {
-		"devices": "Olla"
+	"ToolBarDevices": {
+		"devices": "Dispositivos",
+		"mobile": "Móvil",
+		"tablet": "Tableta",
+		"desktop": "Escritorio"
+	},
+	"ToolBarScale": {
+		"zoom": "Zoom"
+	},
+	"ToolBarRotate": {
+		"rotate": "Girar"
+	},
+	"ToolBarPanel": {
+		"panel": "Panel",
+		"off": "Desactivado",
+		"fixed": "Fijo",
+		"float": "Flotante"
+	},
+	"ToolBarCheckbox": {
+		"select-devices": "Seleccionar dispositivos",
+		"select-all": "Seleccionar todo"
+	},
+	"Main": {
+		"input-url-placeholder": "Introduce la URL de un sitio web",
+		"button": "Ir"
+	},
+	"DonateInfo": {
+		"toast-text": "Dirección copiada al portapapeles",
+		"button": "Apóyanos",
+		"button-copy": "Copiar",
+		"title": "Donar",
+		"desc": "¿Te gusta el servicio? Apóyalo con criptomonedas — ¡esto ayudará a que el proyecto siga creciendo!",
+		"btc-desc": "Envía solo Bitcoin (BTC) a esta dirección. Otros activos se perderán permanentemente.",
+		"eth-desc": "Envía solo Ethereum (ETH) a esta dirección. Otros activos se perderán permanentemente.",
+		"usdt-desc": "Envía solo Tether (TRC20) a esta dirección. Otros activos se perderán permanentemente.",
+		"bnb-desc": "Envía solo BNB Smart Chain (BNB) a esta dirección. Otros activos se perderán permanentemente.",
+		"sol-desc": "Envía solo Solana (SOL) a esta dirección. Otros activos se perderán permanentemente.",
+		"xrp-desc": "Envía solo XRP (XRP) a esta dirección. Otros activos se perderán permanentemente.",
+		"gratitude": "¡Gracias!"
+	},
+	"LanguageToggle": {
+		"lang": "Idioma"
+	},
+	"Welcome": {
+		"title-h2": "Mira tu sitio web en cualquier marco: móvil, tableta, portátil o pantalla grande.",
+		"title-h3": "Prueba la adaptabilidad para que tu sitio sea cómodo para todos los usuarios.",
+		"title-h4": "¡Totalmente gratis y completamente visual!"
+	},
+	"HintEnterUrl": {
+		"text-1": "Introduce",
+		"text-2": "la dirección del sitio web"
+	},
+	"HintSelectDevice": {
+		"text-1": "Selecciona un",
+		"text-2": "dispositivo"
+	},
+	"ToolBarCopyright": {
+		"text": "Todos los derechos reservados."
+	},
+	"": {
+		"": ""
 	}
 }

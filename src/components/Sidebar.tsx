@@ -1,22 +1,24 @@
 // src/components/Sidebar.tsx
-import ToolBarCheckbox from './toolbar/ToolBarCheckbox'
-import ToolbarDevices from './toolbar/ToolbarDevices'
-import ToolBarPanel from './toolbar/ToolBarPanel'
-import ToolBarRotate from './toolbar/ToolBarRotate'
-import ToolBarScale from './toolbar/ToolBarScale'
-import ToolBarContact from './toolbar/ToolBarContact'
 import ToolBarLogo from './toolbar/ToolBarLogo'
+import ToolBarScale from './toolbar/ToolBarScale'
+import ToolBarRotate from './toolbar/ToolBarRotate'
+import ToolBarPanel from './toolbar/ToolBarPanel'
+import ToolBarCheckbox from './toolbar/ToolBarCheckbox'
+import ToolBarContact from './toolbar/ToolBarContact'
+import ToolBarCopyright from './toolbar/ToolBarCopyright'
+import ToolBarDevices from './toolbar/ToolBarDevices'
 
 export default function Sidebar() {
 	return (
 		<aside className='text-foreground w-[310px] flex flex-col flex-none p-2 border-r-1'>
 			<ToolBarLogo />
-			<ToolbarDevices />
+			<ToolBarDevices />
 			<ToolBarScale />
 			<ToolBarRotate />
 			<ToolBarPanel />
 			<ToolBarCheckbox />
 			<ToolBarContact />
+			<ToolBarCopyright />
 		</aside>
 	)
 }

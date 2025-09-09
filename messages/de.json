@@ -1,5 +1,64 @@
 {
-	"ToolbarDevices": {
-		"devices": "Duhast"
+	"ToolBarDevices": {
+		"devices": "Geräte",
+		"mobile": "Handy",
+		"tablet": "Tablet",
+		"desktop": "Desktop"
+	},
+	"ToolBarScale": {
+		"zoom": "Zoom"
+	},
+	"ToolBarRotate": {
+		"rotate": "Drehen"
+	},
+	"ToolBarPanel": {
+		"panel": "Panel",
+		"off": "Aus",
+		"fixed": "Fixiert",
+		"float": "Schwebend"
+	},
+	"ToolBarCheckbox": {
+		"select-devices": "Geräte auswählen",
+		"select-all": "Alle auswählen"
+	},
+	"Main": {
+		"input-url-placeholder": "Website-URL eingeben",
+		"button": "Los"
+	},
+	"DonateInfo": {
+		"toast-text": "Adresse in die Zwischenablage kopiert",
+		"button": "Unterstütze uns",
+		"button-copy": "Kopieren",
+		"title": "Spenden",
+		"desc": "Gefällt dir der Service? Unterstütze ihn mit Kryptowährung — das hilft, das Projekt weiterzuentwickeln!",
+		"btc-desc": "Sende nur Bitcoin (BTC) an diese Adresse. Andere Assets gehen dauerhaft verloren.",
+		"eth-desc": "Sende nur Ethereum (ETH) an diese Adresse. Andere Assets gehen dauerhaft verloren.",
+		"usdt-desc": "Sende nur Tether (TRC20) an diese Adresse. Andere Assets gehen dauerhaft verloren.",
+		"bnb-desc": "Sende nur BNB Smart Chain (BNB) an diese Adresse. Andere Assets gehen dauerhaft verloren.",
+		"sol-desc": "Sende nur Solana (SOL) an diese Adresse. Andere Assets gehen dauerhaft verloren.",
+		"xrp-desc": "Sende nur XRP (XRP) an diese Adresse. Andere Assets gehen dauerhaft verloren.",
+		"gratitude": "Vielen Dank!"
+	},
+	"LanguageToggle": {
+		"lang": "Sprache"
+	},
+	"Welcome": {
+		"title-h2": "Sieh dir deine Website in jedem Rahmen an: Handy, Tablet, Laptop oder größerer Bildschirm.",
+		"title-h3": "Teste die Responsivität, damit deine Website für jeden Nutzer angenehm ist.",
+		"title-h4": "Komplett kostenlos, vollständig visuell!"
+	},
+	"HintEnterUrl": {
+		"text-1": "Gib eine",
+		"text-2": "Website-Adresse ein"
+	},
+	"HintSelectDevice": {
+		"text-1": "Wähle ein",
+		"text-2": "Gerät"
+	},
+	"ToolBarCopyright": {
+		"text": "Alle Rechte vorbehalten."
+	},
+	"": {
+		"": ""
 	}
 }

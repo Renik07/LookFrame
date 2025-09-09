@@ -2,13 +2,15 @@
 
 import { useDevices } from "@/store/useDevices";
 import { Slider } from "@/components/ui/slider";
+import { useTranslations } from "next-intl";
 
 export default function ToolBarScale() {
+	const t = useTranslations('ToolBarScale');
 	const { scale, setScale } = useDevices();
 
 	return (
 		<section className="mb-3">
-			<h3 className="mb-1 text-foreground">Zoom</h3>
+			<h3 className="mb-1 text-foreground">{t('zoom')}</h3>
 			<div className="flex items-center justify-between space-x-4">
 				<Slider
 					value={[scale * 100]}

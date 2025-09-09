@@ -1,8 +1,9 @@
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from "@/components/ui/select";
 import { useLocale } from "./LocaleProvider";
-import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 export default function LanguageToggle() {
+	const t = useTranslations('LanguageToggle');
 	const { locale, setLocale } = useLocale();
 	return (
 		<div className="ml-auto">
@@ -12,7 +13,7 @@ export default function LanguageToggle() {
 				</SelectTrigger>
 				<SelectContent>
 					<SelectGroup>
-						<SelectLabel>Language</SelectLabel>
+						<SelectLabel>{t('lang')}</SelectLabel>
 						<SelectItem value="en">EN</SelectItem>
 						<SelectItem value="es">ES</SelectItem>
 						<SelectItem value="de">DE</SelectItem>
