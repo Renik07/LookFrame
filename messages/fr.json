@@ -1,4 +1,8 @@
 {
+	"Metadata": {
+		"title": "LookFrame - Aperçu adaptatif des sites web sur différents appareils",
+		"description": "Testez gratuitement en ligne la réactivité de votre site ! Découvrez comment votre site apparaît sur différents appareils : smartphone, tablette, ordinateur portable et moniteur."
+	},
 	"ToolBarDevices": {
 		"devices": "Appareils",
 		"mobile": "Téléphone",

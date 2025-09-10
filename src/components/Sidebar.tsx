@@ -10,7 +10,7 @@ import ToolBarDevices from './toolbar/ToolBarDevices'
 
 export default function Sidebar() {
 	return (
-		<aside className='text-foreground w-[310px] flex flex-col flex-none p-2 border-r-1'>
+		<aside className='text-foreground w-[320px] flex flex-col flex-none p-2 border-r-1'>
 			<ToolBarLogo />
 			<ToolBarDevices />
 			<ToolBarScale />

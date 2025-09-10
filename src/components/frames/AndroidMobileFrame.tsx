@@ -70,7 +70,7 @@ export default function AndroidMobileFrame({ url, device, baseWidth, baseHeight,
 								<Image src={iconHome} alt="" width={24} height={25} />
 								<div className="bg-[#FAEFF1] p-2.5 pl-4 pr-4 rounded-4xl flex items-center gap-3">
 									<Image src={iconLock} alt="" width={16} height={21} />
-									<span className="text-black truncate max-w-36">leon-fumi.netlify.apdasdadasdp</span>
+									<span className="text-black truncate max-w-36">google.com</span>
 								</div>
 								<Image src={iconMic} alt="" width={15} height={27} />
 								<Image src={iconTab} alt="" width={23} height={23} />
