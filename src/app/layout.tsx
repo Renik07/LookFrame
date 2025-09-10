@@ -33,7 +33,61 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: t("title"),
 		description: t("description"),
-	};
+		keywords: [
+			"responsive design",
+			"website preview",
+			"mobile friendly",
+			"tablet view",
+			"desktop view",
+			"free tool",
+			"look-frame",
+			"online tester",
+			"screen size simulator",
+			"cross device",
+			"web design tool",
+			"responsive checker"
+		],
+		alternates: {
+			canonical: "https://look-frame.com",
+		},
+		openGraph: {
+			title: t("title"),
+			description: t("description"),
+			url: "https://look-frame.com",
+			siteName: "LookFrame",
+			images: [
+				{
+					url: "https://look-frame.com/og-image.png",
+					width: 1200,
+					height: 630,
+					alt: "LookFrame - Preview your website on different devices",
+				},
+			],
+			locale: "en_US",
+			type: "website",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: t("title"),
+			description: t("description"),
+			images: ["https://look-frame.com/og-image.png"],
+		},
+		icons: {
+			icon: "https://look-frame.com/favicon.ico",
+			apple: "https://look-frame.com/apple-touch-icon.png",
+		},
+		robots: {
+			index: true,
+			follow: true,
+			googleBot: {
+				index: true,
+				follow: true,
+				"max-video-preview": -1,
+				"max-image-preview": "large",
+				"max-snippet": -1,
+			},
+		},
+	}
 }
 
 export default function RootLayout({
