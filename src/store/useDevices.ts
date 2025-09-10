@@ -5,7 +5,7 @@ import { DevicesState } from "@/lib/types";
 export const useDevices = create<DevicesState>((set) => ({
 	selected: [],
 	category: "mobile",
-	scale: 0.5, // по умолчанию 50%
+	scale: 0.7, // по умолчанию 50%
 	orientation: "portrait",
 	panelMode: "off",
 	// теперь при смене категории сбрасываем selected

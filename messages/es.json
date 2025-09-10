@@ -1,4 +1,8 @@
 {
+	"Metadata": {
+		"title": "LookFrame - Vista previa adaptable de sitios web en diferentes dispositivos",
+		"description": "¡Comprueba la adaptabilidad de tu sitio web en línea y gratis! Descubre cómo se ve tu página en distintos dispositivos: smartphone, tableta, portátil y monitor."
+	},
 	"ToolBarDevices": {
 		"devices": "Dispositivos",
 		"mobile": "Móvil",

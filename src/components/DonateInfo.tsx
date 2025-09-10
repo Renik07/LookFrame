@@ -68,8 +68,8 @@ export default function DonateInfo() {
 				<DrawerContent>
 					<DrawerHeader>
 						<DrawerTitle className="text-4xl">{t('title')}</DrawerTitle>
-						<DrawerDescription className="mb-2">{t('desc')}</DrawerDescription>
-						<div className="max-w-110 px-2 sm:px-0 m-auto">
+						<DrawerDescription className="mb-2 text-[22px]">{t('desc')}</DrawerDescription>
+						<div className="max-w-106 px-2 sm:px-0 m-auto">
 							<Tabs defaultValue="btc">
 								<TabsList className="bg-card-foreground">
 									<TabsTrigger className={`group dark:data-[state=active]:bg-[#FF7C00] data-[state=active]:bg-[#FF7C00] ${tabTriggerClass}`} value="btc">
@@ -112,13 +112,13 @@ export default function DonateInfo() {
 								<TabsContent value="btc">
 									<Card>
 										<CardHeader>
-											<CardTitle className="text-foreground">Bitcoin (BTC)</CardTitle>
+											<CardTitle className="text-foreground text-[24px]">Bitcoin (BTC)</CardTitle>
 											<CardDescription>{t('btc-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={BTC_URI} size={175} />
 											<div className="text-left">
-												<h4 className="mb-2 break-all text-foreground">{addresses.btc}</h4>
+												<h4 className="font-robotoMono mb-2 break-all text-foreground text-[18px]">{addresses.btc}</h4>
 												<Button
 													className="flex items-center justify-center cursor-pointer mb-4"
 													onClick={() => handleCopy('btc')}
@@ -140,13 +140,13 @@ export default function DonateInfo() {
 								<TabsContent value="eth">
 									<Card>
 										<CardHeader>
-											<CardTitle className="text-foreground">Ethereum (ETH)</CardTitle>
+											<CardTitle className="text-foreground text-[24px]">Ethereum (ETH)</CardTitle>
 											<CardDescription>{t('eth-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={ETH_URI} size={175} />
 											<div className="text-left">
-												<h4 className="mb-2 break-all text-foreground">{addresses.eth}</h4>
+												<h4 className="font-robotoMono mb-2 break-all text-foreground text-[18px]">{addresses.eth}</h4>
 												<Button
 													className="flex items-center justify-center cursor-pointer mb-4"
 													onClick={() => handleCopy('eth')}
@@ -168,13 +168,13 @@ export default function DonateInfo() {
 								<TabsContent value="usdt">
 									<Card>
 										<CardHeader>
-											<CardTitle className="text-foreground">USDT (ETH)</CardTitle>
+											<CardTitle className="text-foreground text-[24px]">USDT (ETH)</CardTitle>
 											<CardDescription>{t('usdt-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={USDT_URI} size={175} />
 											<div className="text-left">
-												<h4 className="mb-2 break-all text-foreground">{addresses.usdt}</h4>
+												<h4 className="font-robotoMono mb-2 break-all text-foreground text-[18px]">{addresses.usdt}</h4>
 												<Button
 													className="flex items-center justify-center cursor-pointer mb-4"
 													onClick={() => handleCopy('usdt')}
@@ -196,13 +196,13 @@ export default function DonateInfo() {
 								<TabsContent value="bnb">
 									<Card>
 										<CardHeader>
-											<CardTitle className="text-foreground">BNB Smart Chain (BNB)</CardTitle>
+											<CardTitle className="text-foreground text-[24px]">BNB Smart Chain (BNB)</CardTitle>
 											<CardDescription>{t('bnb-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={BNB_URI} size={175} />
 											<div className="text-left">
-												<h4 className="mb-2 break-all text-foreground">{addresses.bnb}</h4>
+												<h4 className="font-robotoMono mb-2 break-all text-foreground text-[18px]">{addresses.bnb}</h4>
 												<Button
 													className="flex items-center justify-center cursor-pointer mb-4"
 													onClick={() => handleCopy('bnb')}
@@ -224,13 +224,13 @@ export default function DonateInfo() {
 								<TabsContent value="sol">
 									<Card>
 										<CardHeader>
-											<CardTitle className="text-foreground">Solana (SOL)</CardTitle>
+											<CardTitle className="text-foreground text-[24px]">Solana (SOL)</CardTitle>
 											<CardDescription>{t('sol-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={SOL_URI} size={175} />
 											<div className="text-left">
-												<h4 className="mb-2 break-all text-foreground">{addresses.sol}</h4>
+												<h4 className="font-robotoMono mb-2 break-all text-foreground text-[18px]">{addresses.sol}</h4>
 												<Button
 													className="flex items-center justify-center cursor-pointer mb-4"
 													onClick={() => handleCopy('sol')}
@@ -252,13 +252,13 @@ export default function DonateInfo() {
 								<TabsContent value="xrp">
 									<Card>
 										<CardHeader>
-											<CardTitle className="text-foreground">XRP (XRP)</CardTitle>
+											<CardTitle className="text-foreground text-[24px]">XRP (XRP)</CardTitle>
 											<CardDescription>{t('xrp-desc')}</CardDescription>
 										</CardHeader>
 										<CardContent className="grid grid-cols-[175px_1fr] gap-4">
 											<QRCode value={XRP_URI} size={175} />
 											<div className="text-left">
-												<h4 className="mb-2 break-all text-foreground">{addresses.xrp}</h4>
+												<h4 className="font-robotoMono mb-2 break-all text-foreground text-[18px]">{addresses.xrp}</h4>
 												<Button
 													className="flex items-center justify-center cursor-pointer mb-4"
 													onClick={() => handleCopy('xrp')}

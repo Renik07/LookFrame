@@ -97,7 +97,7 @@ export default function IpadFrame({ url, device, baseWidth, baseHeight, scale }:
 										>
 											{/* url */}
 											<div className="flex-1 text-sm text-[#222] truncate select-all text-center ml-6">
-												<span className="font-medium">sdasasdasasdasdsdasasdasdsdasdsdasasdasasdasdsdasasdasdsdasd</span>
+												<span className="font-medium">apple.com</span>
 											</div>
 
 											{/* small actions */}

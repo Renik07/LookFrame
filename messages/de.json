@@ -1,4 +1,8 @@
 {
+	"Metadata": {
+		"title": "LookFrame - Responsive Webseiten-Vorschau auf verschiedenen Geräten",
+		"description": "Teste die Responsivität deiner Website online und kostenlos! Sieh dir an, wie deine Seite auf verschiedenen Geräten aussieht: Smartphone, Tablet, Laptop und Monitor."
+	},
 	"ToolBarDevices": {
 		"devices": "Geräte",
 		"mobile": "Handy",
