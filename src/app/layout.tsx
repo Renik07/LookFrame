@@ -73,8 +73,8 @@ export async function generateMetadata(): Promise<Metadata> {
 			images: ["https://look-frame.com/og-image.png"],
 		},
 		icons: {
-			icon: "https://look-frame.com/favicon.ico",
-			apple: "https://look-frame.com/apple-touch-icon.png",
+			icon: "https://look-frame.com/favicon/favicon.ico",
+			apple: "https://look-frame.com/favicon/apple-touch-icon.png",
 		},
 		robots: {
 			index: true,
