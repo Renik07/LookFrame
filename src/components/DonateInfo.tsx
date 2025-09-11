@@ -52,7 +52,7 @@ export default function DonateInfo() {
 		navigator.clipboard.writeText(address)
 		toast(currency.toUpperCase(), {
 			description: (
-				<div className="text-foreground">
+				<div className="text-foreground text-[16px]">
 					{t('toast-text')}
 				</div>
 			),
