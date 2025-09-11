@@ -70,7 +70,7 @@ export default function ToolBarCheckbox() {
 									<span className="font-semibold text-foreground">{platform}</span>
 								</div>
 							</AccordionTrigger>
-							<AccordionContent className="pl-6 space-y-2">
+							<AccordionContent className="pl-3 space-y-2">
 								<div className="flex items-center gap-2 mb-2">
 									<Checkbox
 										className="border-[var(--border-checkbox)]"
