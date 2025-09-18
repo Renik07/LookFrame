@@ -4,7 +4,7 @@ export const windowsDesktop: Device[] = [
 	// --- Стандартные десктопные мониторы ---
 	{
 		id: "desktop-720p",
-		name: "HD 720p (1280x720)",
+		name: "HD 720p",
 		type: "desktop",
 		platform: "Windows",
 		width: 1280,
@@ -13,7 +13,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "desktop-1080p",
-		name: "Full HD 1080p (1920x1080)",
+		name: "Full HD 1080p",
 		type: "desktop",
 		platform: "Windows",
 		width: 1920,
@@ -22,7 +22,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "desktop-1440p",
-		name: "QHD 1440p (2560x1440)",
+		name: "QHD 1440p",
 		type: "desktop",
 		platform: "Windows",
 		width: 2560,
@@ -31,7 +31,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "desktop-4k",
-		name: "4K UHD (3840x2160)",
+		name: "4K UHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 3840,
@@ -40,7 +40,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "desktop-5k",
-		name: "5K (5120x2880)",
+		name: "5K",
 		type: "desktop",
 		platform: "Windows",
 		width: 5120,
@@ -49,7 +49,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "desktop-8k",
-		name: "8K UHD (7680x4320)",
+		name: "8K UHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 7680,
@@ -59,7 +59,7 @@ export const windowsDesktop: Device[] = [
 	// --- Популярные ноутбуки (Windows / Linux) ---
 	{
 		id: "laptop-13-3",
-		name: "Laptop 13.3\" (1366x768)",
+		name: "Laptop 13.3\"",
 		type: "desktop",
 		platform: "Windows",
 		width: 1366,
@@ -68,7 +68,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "laptop-14",
-		name: "Laptop 14\" HD (1600x900)",
+		name: "Laptop 14\" HD",
 		type: "desktop",
 		platform: "Windows",
 		width: 1600,
@@ -77,7 +77,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "laptop-15-6-fhd",
-		name: "Laptop 15.6\" Full HD (1920x1080)",
+		name: "Laptop 15.6\" Full HD",
 		type: "desktop",
 		platform: "Windows",
 		width: 1920,
@@ -86,7 +86,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "laptop-15-6-qhd",
-		name: "Laptop 15.6\" QHD (2560x1440)",
+		name: "Laptop 15.6\" QHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 2560,
@@ -95,7 +95,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "laptop-16-uhd",
-		name: "Laptop 16\" 4K UHD (3840x2160)",
+		name: "Laptop 16\" 4K UHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 3840,
@@ -104,7 +104,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "gaming-laptop-17",
-		name: "Gaming Laptop 17.3\" QHD (2560x1440)",
+		name: "Gaming Laptop 17.3\" QHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 2560,
@@ -114,7 +114,7 @@ export const windowsDesktop: Device[] = [
 	// --- Популярные Ultrawide мониторы ---
 	{
 		id: "ultrawide-1080p",
-		name: "UltraWide FHD (2560x1080)",
+		name: "UltraWide FHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 2560,
@@ -123,7 +123,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "ultrawide-1440p",
-		name: "UltraWide QHD (3440x1440)",
+		name: "UltraWide QHD",
 		type: "desktop",
 		platform: "Windows",
 		width: 3440,
@@ -132,7 +132,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "ultrawide-1600p",
-		name: "UltraWide 1600p (3840x1600)",
+		name: "UltraWide 1600p",
 		type: "desktop",
 		platform: "Windows",
 		width: 3840,
@@ -141,7 +141,7 @@ export const windowsDesktop: Device[] = [
 	},
 	{
 		id: "super-ultrawide",
-		name: "Super UltraWide (5120x1440)",
+		name: "Super UltraWide",
 		type: "desktop",
 		platform: "Windows",
 		width: 5120,
