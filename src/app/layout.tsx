@@ -77,9 +77,14 @@ export async function generateMetadata(): Promise<Metadata> {
       images: ["https://look-frame.com/og-image.png"],
     },
     icons: {
-      icon: "https://look-frame.com/favicon/favicon.ico",
-      apple: "https://look-frame.com/favicon/apple-touch-icon.png",
+      icon: [
+        { url: "/favicon.ico" }, // fallback
+        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      ],
+      apple: "/apple-touch-icon.png",
     },
+    manifest: "/site.webmanifest",
     robots: {
       index: true,
       follow: true,
